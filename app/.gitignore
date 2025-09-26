@@ -1,0 +1,25 @@
+# Ignore build outputs
+/build/
+*/build/
+
+# Ignore Gradle cache
+/.gradle/
+**/.gradle/
+
+# Ignore Android Studio project files
+/.idea/
+*.iml
+
+# Ignore local configuration files
+/local.properties
+
+# Keep only source code and resources
+!/app/src/main/java/**/*.java
+!/app/src/main/res/**/*.xml
+!/gradle/wrapper/gradle-wrapper.jar
+!/gradlew
+!/gradlew.bat
+!/settings.gradle.kts
+!/build.gradle.kts
+!/gradle.properties
+!/.gitignore

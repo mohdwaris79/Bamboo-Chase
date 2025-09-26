@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA">
+
+    <!-- GameView area -->
+    <com.example.snakegame.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_area"
+        android:layout_alignParentTop="true" />
+
+    <!-- Footer Area -->
+    <Button
+        android:id="@+id/btn_level2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 2"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="8dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/footer_area"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:background="#222222">
+
+        <!-- Joystick -->
+        <com.example.snakegame.JoystickView
+            android:id="@+id/joystickView"
+            android:layout_width="200dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true" />
+
+        <!-- Restart Button (inside footer, right side) -->
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="115dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#228B22"
+            android:text="Exit🎯"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Score (left side) -->
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:background="#228B22"
+            android:padding="12dp"
+            android:text="Score: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

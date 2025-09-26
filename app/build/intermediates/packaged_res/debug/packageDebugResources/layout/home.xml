@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hs_image">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:text="Bamboo Chase 🌿     🐼🐍"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_new_game"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="New Game🐼"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_About"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_new_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="About📜"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_HScore"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_About"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="High Score👑"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Exit"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_HScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Exit❌"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_Exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/high_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
