@@ -1,9 +1,0 @@
-# Ignore IDE & Gradle
-.idea/
-*.iml
-.gradle/
-local.properties
-
-# Ignore build outputs
-/build/
-/app/build/
