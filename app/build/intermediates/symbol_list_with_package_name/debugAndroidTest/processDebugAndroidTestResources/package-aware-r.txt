@@ -1,3 +1,0 @@
-com.example.snakegame.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
